@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon Portfolio</title>
+    <meta name="description" content="Bienvenue sur mon portfolio — développeur web passionné." />
+    <meta property="og:title" content="Mon Portfolio" />
+    <meta property="og:image" content="images/hero.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="container navbar-inner">
+        <a href="#" class="logo">dev<span>.me</span></a>
+        <ul class="list-inline nav-links">
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#skills">Compétences</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero">
+      <div class="container hero-content">
+        <p class="hero-tag">Bonjour, je suis</p>
+        <h1>Alex Dupont</h1>
+        <p class="hero-subtitle">Développeur web front-end passionné par le design et le code propre.</p>
+        <a href="#contact" class="btn-primary">Me contacter</a>
+      </div>
+      <img src="images/hero.png" alt="Hero background" class="hero-img" />
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about" class="section-about">
+      <div class="container">
+        <h2>À propos</h2>
+        <p>Je suis un développeur web junior formé au Wagon. J'aime créer des interfaces claires, élégantes et accessibles. HTML, CSS et JavaScript n'ont plus de secrets pour moi !</p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section-skills">
+      <div class="container">
+        <h2>Compétences</h2>
+        <div class="cards-row">
+          <div class="card-skill">
+            <h3>HTML</h3>
+            <p>Structure sémantique, accessibilité, balises meta.</p>
+          </div>
+          <div class="card-skill">
+            <h3>CSS</h3>
+            <p>Flexbox, responsive design, animations, UI kits.</p>
+          </div>
+          <div class="card-skill">
+            <h3>JavaScript</h3>
+            <p>DOM, événements, logique client.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section-contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <form class="form-contact">
+          <label for="name">Nom</label>
+          <input type="text" id="name" placeholder="Votre nom" />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="votre@email.com" />
+
+          <label for="message">Message</label>
+          <textarea id="message" rows="4" placeholder="Votre message..."></textarea>
+
+          <button type="submit" class="btn-primary">Envoyer</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <p>© 2026 Alex Dupont — Fait avec ❤️ et du CSS propre.</p>
+      </div>
+    </footer>
+
+  </body>
+</html>
