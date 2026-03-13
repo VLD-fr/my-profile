@@ -3,92 +3,302 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mon Portfolio</title>
-    <meta name="description" content="Bienvenue sur mon portfolio — développeur web passionné." />
-    <meta property="og:title" content="Mon Portfolio" />
-    <meta property="og:image" content="images/hero.png" />
+    <title>Victor Ledall — Portfolio</title>
+    <meta name="description" content="Portfolio de Victor Ledall — Développeur web formé au Wagon." />
     <link rel="stylesheet" href="styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
   </head>
   <body>
 
     <!-- NAVBAR -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
       <div class="container navbar-inner">
-        <a href="#" class="logo">dev<span>.me</span></a>
-        <ul class="list-inline nav-links">
-          <li><a href="#about">À propos</a></li>
+        <a href="#" class="logo">V<span>L</span></a>
+        <ul class="nav-links">
+          <li><a href="#about">A propos</a></li>
           <li><a href="#skills">Compétences</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#typeform" class="btn-nav">Formulaire</a></li>
         </ul>
+        <button class="burger" id="burger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </nav>
 
     <!-- HERO -->
     <header class="hero">
-      <div class="container hero-content">
-        <p class="hero-tag">Bonjour, je suis</p>
-        <h1>Alex Dupont</h1>
-        <p class="hero-subtitle">Développeur web front-end passionné par le design et le code propre.</p>
-        <a href="#contact" class="btn-primary">Me contacter</a>
+      <div class="hero-bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
       </div>
-      <img src="images/hero.png" alt="Hero background" class="hero-img" />
+      <div class="container hero-content">
+        <p class="hero-tag fade-in">Salut, moi c'est</p>
+        <h1 class="fade-in delay-1">Victor Ledall</h1>
+        <p class="hero-subtitle fade-in delay-2">Etudiant au <strong>Wagon</strong>, passionné par le développement web, le design et la création d'expériences digitales.</p>
+        <div class="hero-cta fade-in delay-3">
+          <a href="#typeform" class="btn-primary">Remplir le formulaire</a>
+          <a href="#about" class="btn-secondary">En savoir plus</a>
+        </div>
+      </div>
+      <div class="scroll-indicator fade-in delay-4">
+        <span></span>
+      </div>
     </header>
 
     <!-- ABOUT -->
-    <section id="about" class="section-about">
+    <section id="about" class="section section-about">
       <div class="container">
-        <h2>À propos</h2>
-        <p>Je suis un développeur web junior formé au Wagon. J'aime créer des interfaces claires, élégantes et accessibles. HTML, CSS et JavaScript n'ont plus de secrets pour moi !</p>
-      </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills" class="section-skills">
-      <div class="container">
-        <h2>Compétences</h2>
-        <div class="cards-row">
-          <div class="card-skill">
-            <h3>HTML</h3>
-            <p>Structure sémantique, accessibilité, balises meta.</p>
+        <span class="section-label">01 — A propos</span>
+        <h2>Qui suis-je ?</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>Je suis Victor, étudiant passionné au <strong>Wagon</strong>. J'apprends à construire des sites web modernes en utilisant HTML, CSS et JavaScript.</p>
+            <p>Mon objectif : créer des interfaces belles, intuitives et accessibles. Je crois que le code est un outil créatif qui permet de transformer des idées en expériences concrètes.</p>
           </div>
-          <div class="card-skill">
-            <h3>CSS</h3>
-            <p>Flexbox, responsive design, animations, UI kits.</p>
-          </div>
-          <div class="card-skill">
-            <h3>JavaScript</h3>
-            <p>DOM, événements, logique client.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number">Le Wagon</span>
+              <span class="stat-label">Formation</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">2026</span>
+              <span class="stat-label">Année</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">Web Dev</span>
+              <span class="stat-label">Spécialité</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="section-contact">
+    <!-- SKILLS -->
+    <section id="skills" class="section section-skills">
       <div class="container">
-        <h2>Contact</h2>
-        <form class="form-contact">
-          <label for="name">Nom</label>
-          <input type="text" id="name" placeholder="Votre nom" />
+        <span class="section-label">02 — Compétences</span>
+        <h2>Ce que je maîtrise</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon">&#60;/&#62;</div>
+            <h3>HTML5</h3>
+            <p>Structure sémantique, accessibilité, SEO et balises meta pour des sites bien construits.</p>
+            <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">#{ }</div>
+            <h3>CSS3</h3>
+            <p>Flexbox, Grid, animations, responsive design et frameworks CSS modernes.</p>
+            <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">JS</div>
+            <h3>JavaScript</h3>
+            <p>Manipulation du DOM, événements, logique client et interactions dynamiques.</p>
+            <div class="skill-bar"><div class="skill-fill" style="width: 75%"></div></div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">Git</div>
+            <h3>Git & GitHub</h3>
+            <p>Versioning, branches, pull requests et travail collaboratif en équipe.</p>
+            <div class="skill-bar"><div class="skill-fill" style="width: 70%"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <label for="email">Email</label>
-          <input type="email" id="email" placeholder="votre@email.com" />
+    <!-- PROJECTS -->
+    <section id="projects" class="section section-projects">
+      <div class="container">
+        <span class="section-label">03 — Projets</span>
+        <h2>Mes réalisations</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%)">
+              <span class="project-tag">HTML / CSS</span>
+            </div>
+            <div class="project-info">
+              <h3>Portfolio Personnel</h3>
+              <p>Ce site que vous visitez actuellement, construit from scratch avec HTML, CSS et JS.</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%)">
+              <span class="project-tag">Le Wagon</span>
+            </div>
+            <div class="project-info">
+              <h3>Challenges Le Wagon</h3>
+              <p>Exercices et projets réalisés durant ma formation au Wagon.</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)">
+              <span class="project-tag">En cours</span>
+            </div>
+            <div class="project-info">
+              <h3>Prochain projet</h3>
+              <p>Un nouveau projet passionnant est en préparation... Stay tuned !</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <label for="message">Message</label>
-          <textarea id="message" rows="4" placeholder="Votre message..."></textarea>
+    <!-- TYPEFORM -->
+    <section id="typeform" class="section section-typeform">
+      <div class="container">
+        <span class="section-label">04 — Formulaire</span>
+        <h2>Parlons ensemble</h2>
+        <p class="typeform-intro">Répondez à quelques questions, une à la fois. Simple et rapide !</p>
 
-          <button type="submit" class="btn-primary">Envoyer</button>
-        </form>
+        <div class="typeform-container">
+          <!-- Progress bar -->
+          <div class="tf-progress">
+            <div class="tf-progress-bar" id="tf-progress-bar"></div>
+            <span class="tf-progress-text" id="tf-progress-text">1 / 6</span>
+          </div>
+
+          <!-- Step 1 -->
+          <div class="tf-step active" data-step="1">
+            <span class="tf-step-number">1 →</span>
+            <label class="tf-question">Comment vous appelez-vous ?</label>
+            <input type="text" class="tf-input" id="tf-name" placeholder="Tapez votre réponse ici..." required />
+            <div class="tf-nav">
+              <button class="btn-primary tf-next" data-next="2">OK ✓</button>
+            </div>
+            <p class="tf-hint">Appuyez sur <strong>Entrée ↵</strong> pour continuer</p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="tf-step" data-step="2">
+            <span class="tf-step-number">2 →</span>
+            <label class="tf-question">Quel est votre email ?</label>
+            <input type="email" class="tf-input" id="tf-email" placeholder="nom@exemple.com" required />
+            <div class="tf-nav">
+              <button class="btn-outline tf-prev" data-prev="1">↑ Précédent</button>
+              <button class="btn-primary tf-next" data-next="3">OK ✓</button>
+            </div>
+            <p class="tf-hint">Appuyez sur <strong>Entrée ↵</strong> pour continuer</p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="tf-step" data-step="3">
+            <span class="tf-step-number">3 →</span>
+            <label class="tf-question">Quel est votre rôle ?</label>
+            <div class="tf-options">
+              <label class="tf-option">
+                <input type="radio" name="role" value="Étudiant" />
+                <span class="tf-option-key">A</span>
+                <span>Etudiant</span>
+              </label>
+              <label class="tf-option">
+                <input type="radio" name="role" value="Développeur" />
+                <span class="tf-option-key">B</span>
+                <span>Développeur</span>
+              </label>
+              <label class="tf-option">
+                <input type="radio" name="role" value="Designer" />
+                <span class="tf-option-key">C</span>
+                <span>Designer</span>
+              </label>
+              <label class="tf-option">
+                <input type="radio" name="role" value="Autre" />
+                <span class="tf-option-key">D</span>
+                <span>Autre</span>
+              </label>
+            </div>
+            <div class="tf-nav">
+              <button class="btn-outline tf-prev" data-prev="2">↑ Précédent</button>
+              <button class="btn-primary tf-next" data-next="4">OK ✓</button>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="tf-step" data-step="4">
+            <span class="tf-step-number">4 →</span>
+            <label class="tf-question">Quelle note donnez-vous à ce site ? ⭐</label>
+            <div class="tf-rating" id="tf-rating">
+              <button class="tf-star" data-value="1">★</button>
+              <button class="tf-star" data-value="2">★</button>
+              <button class="tf-star" data-value="3">★</button>
+              <button class="tf-star" data-value="4">★</button>
+              <button class="tf-star" data-value="5">★</button>
+            </div>
+            <div class="tf-nav">
+              <button class="btn-outline tf-prev" data-prev="3">↑ Précédent</button>
+              <button class="btn-primary tf-next" data-next="5">OK ✓</button>
+            </div>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="tf-step" data-step="5">
+            <span class="tf-step-number">5 →</span>
+            <label class="tf-question">Un commentaire ou message ?</label>
+            <textarea class="tf-input tf-textarea" id="tf-message" placeholder="Ecrivez ce que vous voulez..." rows="4"></textarea>
+            <div class="tf-nav">
+              <button class="btn-outline tf-prev" data-prev="4">↑ Précédent</button>
+              <button class="btn-primary tf-next" data-next="6">OK ✓</button>
+            </div>
+            <p class="tf-hint">Appuyez sur <strong>Ctrl + Entrée</strong> pour continuer</p>
+          </div>
+
+          <!-- Step 6 - Confirmation -->
+          <div class="tf-step" data-step="6">
+            <span class="tf-step-number">6 →</span>
+            <label class="tf-question">Comment avez-vous découvert ce site ?</label>
+            <div class="tf-options">
+              <label class="tf-option">
+                <input type="radio" name="source" value="Le Wagon" />
+                <span class="tf-option-key">A</span>
+                <span>Le Wagon</span>
+              </label>
+              <label class="tf-option">
+                <input type="radio" name="source" value="GitHub" />
+                <span class="tf-option-key">B</span>
+                <span>GitHub</span>
+              </label>
+              <label class="tf-option">
+                <input type="radio" name="source" value="Réseaux sociaux" />
+                <span class="tf-option-key">C</span>
+                <span>Réseaux sociaux</span>
+              </label>
+              <label class="tf-option">
+                <input type="radio" name="source" value="Bouche à oreille" />
+                <span class="tf-option-key">D</span>
+                <span>Bouche à oreille</span>
+              </label>
+            </div>
+            <div class="tf-nav">
+              <button class="btn-outline tf-prev" data-prev="5">↑ Précédent</button>
+              <button class="btn-primary tf-submit" id="tf-submit">Envoyer 🚀</button>
+            </div>
+          </div>
+
+          <!-- Thank you -->
+          <div class="tf-step tf-thankyou" data-step="done">
+            <div class="tf-check-icon">✓</div>
+            <h3>Merci beaucoup !</h3>
+            <p>Vos réponses ont bien été enregistrées. A bientôt !</p>
+            <button class="btn-secondary" id="tf-restart">Recommencer</button>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- FOOTER -->
     <footer class="footer">
-      <div class="container">
-        <p>© 2026 Alex Dupont — Fait avec ❤️ et du CSS propre.</p>
+      <div class="container footer-inner">
+        <a href="#" class="logo footer-logo">V<span>L</span></a>
+        <p>Fait avec du code et de la passion — Le Wagon 2026</p>
+        <div class="footer-links">
+          <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
       </div>
     </footer>
 
+    <script src="script.js"></script>
   </body>
 </html>
